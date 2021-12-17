@@ -21,7 +21,7 @@ class FragmentTest : AppCompatActivity() {
         //Button 2
         findViewById<Button>(R.id.button2).setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container_view, TestFragment2())
+                .replace(R.id.fragment_container_view, TestFragment2())
                 .commit()
         }
         //show second fragment
